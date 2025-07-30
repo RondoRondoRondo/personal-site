@@ -1,0 +1,54 @@
+baseURL = "https://rondorondorondo.com/"
+languageCode = "en-us"
+title = "RondoRondoRondo"
+theme = "ananke"
+enableRobotsTXT = true
+
+# Pagination replaced with pagerSize inside pagination config
+[pagination]
+pagerSize = 5
+
+# Params section: used for theme-specific or custom variables
+[params]
+author = "Christian Rondo"
+description = "Welcome to RondoRondoRondo's blog"
+showReadingTime = true
+dateFormat = "January 2, 2006"  # Hugo uses Go date format strings
+
+# Menu config
+[menu]
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+name = "Blog"
+url = "/posts/"
+weight = 3
+
+[[menu.main]]
+name = "Quotes"
+url = "/quote/"
+weight = 4
+
+# Outputs for homepage only HTML to avoid JSON error
+[outputs]
+home = ["HTML"]
+
+# Taxonomies config
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# Languages config for multilingual support (optional)
+[languages]
+[languages.en]
+languageName = "English"
+weight = 1
